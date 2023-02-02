@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>shop</title>
+    <link rel="stylesheet" href="style.css">
+    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+
+<body bgcolor="blsck">
+
+    <section id="header">
+        <a href="#"><img src="logo3.png" class="logo" height="70px"></a>
+        <div>
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" href="login.html">Login</a></li>
+                    <li><a  href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+    </section>
+
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+             <div id="btn"></div>   
+            <button type="button" class="toggle-button" onclick="login()">Login</button>
+            <button type="button" class="toggle-button" onclick="Register()">Register</button>
+            </div>
+        <form id="login" class="input-group">
+          <input type="text" class="input-field" placeholder="Enter User Id">
+          <input type="email" class="input-field" placeholder="Enter Email Id">
+          <input type="text" class="input-field" placeholder="Enter Password">
+          <p>Forgot password?<a href="https://www.w3schools.com/asp/met_websecurity_resetpassword.asp"> Click Here</a></p>
+          <input type="checkbox" class="check-box"><span>Remember Password</span>
+          <button type="submit" class="submit-button" onclick="openpopup()">Login</button>
+          <div class="popup" id="popup">
+            <img src="404-tick.png">
+            <h2>Thank You!</h2>
+            <p class="clr">You Have Been Succesfully Logdin.</p>
+            <button type="button" onclick="closepopup()">OK</button>
+          </div>
+         </form>
+        
+         <form  id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="First Name">
+            <input type="text" class="input-field" placeholder="Last Name">
+            <input type="email" class="input-field" placeholder="Email Id">
+            <input type="password" class="input-field" placeholder="Enter Password">
+            <input type="password" class="input-field" placeholder="Confirm Password">
+            <input type="checkbox" class="check-box"><span>I Have Read Terms And Conditions</span>
+            <button type="submit" class="submit-button"  onclick="openpopup()">Register</button>
+            <div class="popup" id="popup">
+                <img src="404-tick.png">
+                <h2>Thank You!</h2>
+                <p class="clr">You Have Been Succesfully Registered.</p>
+                <button type="button" onclick="closepopup()">OK</button>
+            </div>
+        </form>
+        </div>
+    </div>
+
+    <script>
+        var x= document.getElementById("login");
+        var y= document.getElementById("register");
+        var z= document.getElementById("btn");
+        function Register(){
+           x.style.left="-400px";
+           y.style.left="50px";
+           z.style.left="110px";
+        }
+        function login(){
+           x.style.left="50px";
+           y.style.left="450px";
+           z.style.left="0px";
+        }
+
+        let popup = document.getElementById("popup");
+
+        function openpopup(){
+            popup.classList.add("open-popup") ;
+        }
+
+        function closepopup(){
+            popup.classList.remove("open-popup") ;
+        }
+    </script>
+</body>
+</html>

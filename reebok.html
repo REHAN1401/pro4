@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>shop</title>
+    <link rel="stylesheet" href="style.css">
+    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="logo3.png" class="logo" height="70px"></a>
+       
+    <div class="conatiner">
+        <form action="" class="search-bar">
+            <input type="text" placeholder="Search Products" onkeyup="search()">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </div>  
+    
+    <div>
+         <ul id="navbar">
+         <li><a href="index.html">Home</a></li>
+         <li><a class="active" href="shop.html">Shop</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="login.html">Login</a></li>
+         <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+         </ul>
+     </div>
+    </section>
+
+  
+    <!DOCTYPE html>
+    
+    <html lang="en" dir="ltr">
+       <body>
+         <div class="sidebar close">
+           <div class="logo-details">
+             <i class='bx bxl-c-plus-plus'></i>
+             <span class="logo_name">Lightshoes.com</span>
+           </div>
+           <ul class="nav-links">
+             <li>
+               <a href="shop.html">
+                <i class='bx bx-store'></i>
+                 <span class="link_name">Dashboard</span>
+               </a>
+               <ul class="sub-menu blank">
+                 <li><a class="link_name" href="#">Dashboard</a></li>
+               </ul>
+             </li>
+             <li>
+               <div class="iocn-link">
+                 <a href="#">
+                  <i class='bx bx-category'></i>
+                   <span class="link_name">Category</span>
+                 </a>
+                 <i class='bx bxs-chevron-down arrow' ></i>
+               </div>
+               <ul class="sub-menu">
+                 <li><a class="link_name" href="#">Category</a></li>
+                 <li><a href="men.html">Men</a></li>
+                 <li><a href="women.html">Women</a></li>
+                 <li><a href="kids.html">Kids</a></li>
+               </ul>
+             </li>
+             <li>
+               <div class="iocn-link">
+                 <a href="#">
+                  <i class='bx bx-search-alt'></i>
+                   <span class="link_name">Brands</span>
+                 </a>
+                 <i class='bx bxs-chevron-down arrow' ></i>
+               </div>
+               <ul class="sub-menu">
+                <li><a class="link_name" href="#">Brands</a></li>
+                <li><a href="nike.html">Nike</a></li>
+                <li><a href="adidas.html">Adidas</a></li>
+                <li><a href="reebok.html">Reebok</a></li>
+                <li><a href="puma.html">Puma</a></li>
+                <li><a href="sparx.html">Sparx</a></li>
+                <li><a href="gucci.html">Gucci</a></li>
+                <li><a href="bata.html">Bata</a></li>
+               </ul>
+             </li>
+             <li>
+               <a href="#">
+                <i class='bx bxs-offer'></i>
+                 <span class="link_name">Offers</span>
+               </a>
+               <ul class="sub-menu blank">
+                 <li><a class="link_name" href="#">Offers</a></li>
+               </ul>
+             </li>
+            
+             <li>
+               <div class="iocn-link">
+                 <a href="#">
+                  <i class='bx bx-collection' ></i>
+                   <span class="link_name">Collection</span>
+                 </a>
+                 <i class='bx bxs-chevron-down arrow' ></i>
+               </div>
+               <ul class="sub-menu">
+                <li><a class="link_name" href="#">Collection</a></li>
+                <li><a href="sneakers.html">Sneakers</a></li>
+                <li><a href="jordan.html">Jordan</a></li>
+                <li><a href="casuals.html">Casuals</a></li>
+                <li><a href="sports.html">Sports shoes</a></li>
+                <li><a href="running.html">Running shoes</a></li>
+              </ul>
+             </li>
+             <li>
+               <a href="cart.html">
+                <i class='bx bx-cart-alt' ></i>
+                 <span class="link_name">Cart</span>
+               </a>
+               <ul class="sub-menu blank">
+                 <li><a class="link_name" href="#">Cart</a></li>
+               </ul>
+             </li>
+             <li>
+               <a href="#">
+                <i class='bx bxs-truck'></i>
+                 <span class="link_name">Order</span>
+               </a>
+               <ul class="sub-menu blank">
+                 <li><a class="link_name" href="#">Order</a></li>
+               </ul>
+             </li>
+             <li>
+               <a href="#">
+                 <i class='bx bx-cog' ></i>
+                 <span class="link_name">Setting</span>
+               </a>
+               <ul class="sub-menu blank">
+                 <li><a class="link_name" href="#">Setting</a></li>
+               </ul>
+             </li>
+             <li>
+           <div class="profile-details">
+             <div class="profile-content">
+               <!--<img src="image/profile.jpg" alt="profileImg">-->
+             </div>
+             <div class="name-job">
+               <div class="profile_name">Log Out</div>
+  
+             </div>
+             <i class='bx bx-log-out' ></i>
+           </div>
+         </li>
+       </ul>
+         </div>
+         <section class="home-section">
+           <div class="home-content">
+             <i class='bx bx-menu' ></i>
+           </div>  
+         </section>
+         
+         <script>
+         let arrow = document.querySelectorAll(".arrow");
+         for (var i = 0; i < arrow.length; i++) {
+           arrow[i].addEventListener("click", (e)=>{
+          let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+          arrowParent.classList.toggle("showMenu");
+           });
+         }
+         let sidebar = document.querySelector(".sidebar");
+         let sidebarBtn = document.querySelector(".bx-menu");
+         console.log(sidebarBtn);
+         sidebarBtn.addEventListener("click", ()=>{
+           sidebar.classList.toggle("close");
+         });
+         </script>
+       </body>    
+    </html>
+      
+    <section class="section-p1">
+        <div>
+            <ul id="category">
+            <li class="men"><a href="men.html">Men</a></li>
+            <li class="women"><a href="women.html">Women</a></li>
+             <li class="kids"><a href="kids.html">Kids</a></li>
+            </ul> 
+        </div>
+    </section>       
+
+    <section id="product1" class="section-p1">
+        <div>
+            <div class="pro-container">
+                <div class="pro" onclick="window.location.href='sproduct10.html';">
+                    <img src="nike10.jpg" alt="">
+                    <div class="desc">
+                        <span>Reebok</span>
+                        <h5>Air Jordan 7 Retro </h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>₹19,295</h4>
+                    </div>
+                    <center><a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a></center>
+                </div> 
+                
+                <div class="pro" onclick="window.location.href='sproduct14.html';">
+                    <img src="nike12.jpg" alt="">
+                    <div class="desc">
+                        <span>Reebok</span>
+                        <h5>SB Chron 2 Canvas</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                           
+                        </div>
+                        <h4>₹25,795</h4>
+                    </div>
+                    <center><a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a></center>
+                </div>
+                
+                <div class="pro" onclick="window.location.href='sproduct16.html';">
+                    <img src="nike21.jpg" alt="">
+                    <div class="desc">
+                        <span>Reebok</span>
+                        <h5>Break</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>₹1,995</h4>
+                    </div>
+                    <center><a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a></center>
+                </div>    
+            </div>        
+        </div>
+    </section>
+
+
+    <footer class="=section-p1">
+        <div class="col">
+            
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Kondhwe Dhawde NDA road,Pune-23</p>
+            <p><strong>Phone:</strong> +91 7620311237 / +91 7357379167</p>
+            <p><strong>Hours:</strong> 9:00 AM - 10:00 PM , Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                  <i class="fab fa-facebook-f"></i> 
+                  <i class="fab fa-twitter"></i>  
+                  <i class="fab fa-instagram"></i> 
+                  <i class="fab fa-pintrest-p"></i>
+                  <i class="fab fa-youtube"></i>      
+                </div>
+            </div>
+         </div>
+
+         <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Deliviery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact us</a>
+         </div>
+
+         <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In </a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+         </div>
+
+         <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="apple.jpg" alt="" height="60px" width="120px" >
+                <img src="google.jpg" alt="" height="60px" width="120px" >
+            </div>
+
+         </div>
+         <div class="copyright">
+            <p>© 2023 lightshoes.com, Inc. All Rights Reserved</p>
+         </div>
+    </footer> 
+    <script>script.js</script>
+</body>
+
+</html>
